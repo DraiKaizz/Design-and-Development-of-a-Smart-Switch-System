@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_mp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_default_person"
+            android:tint="@android:color/white"
+            tools:ignore="UseAppTint" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/white"
+            app:startIconTint="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/white"
+            app:startIconTint="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bacnk_button"
+            android:text="Update Profile"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/ic_login">
+
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView1"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ic_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="Invitation To Login"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:helperText="Enter Email"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconMinSize="26dp"
+
+            app:startIconTint="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_email"
+                android:layout_width="263dp"
+                android:layout_height="50dp"
+                android:drawablePadding="16dp"
+                android:hint="Email"
+                android:inputType="text"
+                android:paddingLeft="45dp"
+                android:paddingTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+
+            android:textColorHint="@color/black"
+            app:boxBackgroundColor="@color/white"
+            app:boxBackgroundMode="outline"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/blue"
+            app:helperText="Enter Password"
+            app:helperTextEnabled="true"
+            app:helperTextTextColor="@color/white"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconMinSize="26dp"
+
+            app:startIconTint="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password"
+                android:layout_width="263dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="16dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:paddingLeft="45dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgot_text_Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/login_btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bacnk_button"
+            android:baselineAligned="false"
+            android:text="LOGIN"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/login_text_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Not yet registered? Sign up"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

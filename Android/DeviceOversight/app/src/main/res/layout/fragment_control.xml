@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/bright_blue">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:lottie_rawRes="@raw/ic_control"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Control A Device"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Device 1: "
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"  />
+
+        <ToggleButton
+            android:id="@+id/switch1"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginStart="20dp"
+            android:background="@drawable/sw_back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Device 2: "
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"  />
+
+        <ToggleButton
+            android:id="@+id/switch2"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:textOff=""
+            android:textOn=""
+            android:layout_marginStart="20dp"
+            android:background="@drawable/sw_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/bright_blue"
+        android:layout_marginTop="30dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:lottie_rawRes="@raw/ic_bac_push"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Control All Device"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/bt_toggle"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>

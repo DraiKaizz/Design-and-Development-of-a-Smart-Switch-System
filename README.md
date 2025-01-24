@@ -7,4 +7,5 @@ Dự án sử dụng ESP8266 và các nút cảm ứng để giao tiếp với �
 
 
 Các Giao Diện Chính Trong Ứng Dụng Di Động:
-![Image](https://github.com/user-attachments/assets/4d41ab90-bf29-4d02-9511-ed8ad83581f1)
+
+<img src="![Image](https://github.com/user-attachments/assets/4d41ab90-bf29-4d02-9511-ed8ad83581f1)" alt="ALI GIF" width="300px">

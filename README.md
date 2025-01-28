@@ -1,11 +1,16 @@
-Thiết kế và xây dựng công tắc thông minh:
+**Smart Switch Design and Development**
 
-Dự án sử dụng ESP8266 và các nút cảm ứng để giao tiếp với điện thoại thông qua Wi-Fi bằng Firebase. Hệ thống tự động chuyển sang chế độ tương thích khi không có hoặc có Wi-Fi. Khi có Wi-Fi, hệ thống có các chức năng sau:
+This project involves the development of a Smart Switch using an ESP8266 microcontroller and touch buttons. The system communicates with a mobile phone via Wi-Fi using Firebase as the backend. It automatically switches to a fallback mode when Wi-Fi is unavailable or available.
 
-Điều khiển bằng giọng nói. Điều khiển bằng cách đặt lịch hẹn. Điều khiển bằng cách nhấn trực tiếp trên điện thoại hoặc bằng nút cảm ứng. Khi không có Wi-Fi, hệ thống sẽ tự động chuyển sang chế độ điều khiển bằng nút cảm ứng trên hệ thống.
+When Wi-Fi is available, the system provides the following features:
+
+**Voice Control**: Users can control the switch using voice commands.
+**Scheduled Control**: Allows users to set schedules for automated switching.
+**Mobile App Control**: Users can interact with the switch directly via the mobile application or touch buttons on the device.
+When Wi-Fi is unavailable, the system automatically switches to touch-button control, ensuring basic functionality.
 
 
 
-Các Giao Diện Chính Trong Ứng Dụng Di Động:
+**Key Interfaces in the Mobile Application**:
 
 <img src="https://github.com/user-attachments/assets/4d41ab90-bf29-4d02-9511-ed8ad83581f1" alt="ALI GIF" width="350">
